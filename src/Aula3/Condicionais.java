@@ -1,6 +1,9 @@
-import static util.Input.lerInt;
+package Aula3;
 
-public class Aula2 {
+import java.util.Scanner;
+
+
+public class Condicionais {
     public static void main(String[] args) {
         String[] frutas = {"Pera", "Laranja", "Maca", "Tomate", "Caqui", "Morango"};
         int[] quantidades = new int[frutas.length];
@@ -36,5 +39,15 @@ public class Aula2 {
         } else {
             return valorNormal * quantidade;
         }
+    }
+
+    public static int lerInt(String msg) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print(msg);
+        int valor = scanner.nextInt();
+        scanner.nextLine();
+
+        return valor;
     }
 }
