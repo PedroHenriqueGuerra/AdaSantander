@@ -1,25 +1,40 @@
-import java.util.Scanner;
+import static util.Input.lerInt;
 
 public class Aula2 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        String[] frutas = {"Pera", "Laranja", "Maca", "Tomate", "Caqui", "Morango"};
+        int[] quantidades = new int[frutas.length];
 
-        System.out.println("Informe a quantidade de frutas: ");
-        int quantFrutas = sc.nextInt();
-        double preco = CalculaPreco(quantFrutas);
-        System.out.printf("O preço final da compra é de: %.2f", preco);
+        System.out.println("Bem vindo a feira. Coloque a quantidade desejada para cada fruta");
 
-        sc.close();
-    }
-
-    public static double CalculaPreco(int quantFrutas){
-        double precoFruta = 0;
-        if (quantFrutas > 9){
-            precoFruta = quantFrutas * 1.25;
+        for(int i = 0; i < frutas.length; i++){
+            String nomeFruta = frutas[i];
+            quantidades[i] = lerInt(nomeFruta + ": ");
         }
-        else precoFruta = quantFrutas * 1.45;
 
-        return precoFruta;
+        double valorTotal = calcularValorCompra(quantidades);
+
+        System.out.printf("Valor total: %.2f", valorTotal);
     }
 
+    public static double calcularValorCompra(int[] quantidades) {
+        double valorCompra = 0;
+
+        for(int i = 0; i < quantidades.length; i++){
+            valorCompra += calcularPreco(quantidades[i]);
+        }
+
+        return valorCompra;
+    }
+
+    public static double calcularPreco(int quantidade) {
+        double valorPromocao = 1.25;
+        double valorNormal = 1.45;
+
+        if(quantidade > 10){
+            return valorPromocao * quantidade;
+        } else {
+            return valorNormal * quantidade;
+        }
+    }
 }
