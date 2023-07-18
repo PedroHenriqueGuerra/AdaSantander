@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 import static util.Input.lerInt;
 
 public class Aula2 {
@@ -36,5 +38,15 @@ public class Aula2 {
         } else {
             return valorNormal * quantidade;
         }
+    }
+
+    public static int lerInt(String msg) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print(msg);
+        int valor = scanner.nextInt();
+        scanner.nextLine();
+
+        return valor;
     }
 }
