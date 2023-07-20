@@ -1,6 +1,6 @@
 package Aula3;
 
-public class SubStrings {
+public class A03EX04 {
     public static int primeiroCaractereUnico(String input) {
         for (int i = 0; i < input.length(); i++) {
             char caracter = input.charAt(i);

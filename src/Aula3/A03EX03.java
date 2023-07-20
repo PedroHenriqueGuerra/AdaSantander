@@ -1,6 +1,6 @@
 package Aula3;
 
-public class Operadores2
+public class A03EX03
 {
     public static double calculoSalario(double[] input) {
         double tempoServico = input[0];

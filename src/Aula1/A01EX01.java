@@ -1,6 +1,6 @@
-import java.util.Scanner;
+package Aula1;
 
-public class Aula1 {
+public class A01EX01 {
     public static void main(String[] args){
 
         double tempF = 50.00;

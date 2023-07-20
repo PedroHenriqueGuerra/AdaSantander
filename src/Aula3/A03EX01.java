@@ -1,8 +1,9 @@
+package Aula3;
+
 import java.util.Scanner;
 
-import static util.Input.lerInt;
 
-public class Aula2 {
+public class A03EX01 {
     public static void main(String[] args) {
         String[] frutas = {"Pera", "Laranja", "Maca", "Tomate", "Caqui", "Morango"};
         int[] quantidades = new int[frutas.length];

@@ -1,7 +1,9 @@
+package Aula2;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Sort {
+public class A02EX02 {
     public static void main(String[] args) {
         int[] numbers = { 5, 4, 1, 2, 3 };
         int[] ascendingOrder = sortAscendingOrder(numbers);

@@ -1,6 +1,6 @@
 package Aula3;
 
-public class Operadores1
+public class A03EX02
 {
     public static double[] custosCarro(double[] input) {
         double precoFinal = input[0];

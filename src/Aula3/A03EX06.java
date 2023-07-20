@@ -1,6 +1,6 @@
 package Aula3;
 
-public class Triangulo {
+public class A03EX06 {
 
     public static void main(String[] args) {
         double area = calculaArea(10, 15, 0);

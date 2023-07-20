@@ -1,9 +1,8 @@
-package Aula3;
+package Aula2;
 
 import java.util.Scanner;
 
-
-public class Condicionais {
+public class A02EX01 {
     public static void main(String[] args) {
         String[] frutas = {"Pera", "Laranja", "Maca", "Tomate", "Caqui", "Morango"};
         int[] quantidades = new int[frutas.length];
