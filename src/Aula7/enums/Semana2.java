@@ -27,7 +27,7 @@ public enum Semana2 {
     }
 
     public static Semana2 stringParaDia(String nomes){
-        for(Semana2 dia : Semana2.values()){
+        for(Semana2 dia : values()){
             for(String diaNome : dia.getNomes()){
                 if(nomes.equalsIgnoreCase(diaNome)){
                     return dia;
